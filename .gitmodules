@@ -1,3 +1,6 @@
 [submodule "ceta-vision-core-library"]
 	path = ceta-vision-core-library
 	url = https://github.com/smarichal/ceta-vision-core-library.git
+[submodule "CETA"]
+	path = CETA
+	url = https://github.com/ewelinka/CETA.git
