@@ -50,6 +50,7 @@ Beyond the logical division in 3 layers, the source code is divided in 2 main gi
 
 # How to create tangible rods
 ![Sample of augmented rod](https://github.com/smarichal/ceta/blob/master/hardware-design/blocks/augmentedrod.png)
+
 Constraints for blocks design: 
 
 1. Equal distances between markers within a block, i.e.,d1=d2=d3. Let’s call this distance d.
@@ -68,6 +69,7 @@ blocks representing number 3. You can modify this mapping in the class BlocksMar
 contrast. The best scenario is black rings and white background.
 
 We are provinding a blocks layout sample file ready to print and place on top of the physical block:
+
 ![Blocks layout](https://github.com/smarichal/ceta/blob/master/hardware-design/blocks/markers.png)
 
 # OpenCV
@@ -91,21 +93,29 @@ The following code belongs to AndroidLauncher.java:
 
 ![Import maven project](https://github.com/smarichal/ceta/blob/master/documentation/importMavenProject.png)
 ![Import maven project](https://github.com/smarichal/ceta/blob/master/documentation/ImportMavenProject2.png)
+
+
 5- At the beginning you will see the project doesn't compile, this is because we need to import the OpenCV library as a project. 
 Download the android version of OpenCV and add it as a project, it should looks like this: 
+
 ![OpenCV project imported](https://github.com/smarichal/ceta/blob/master/documentation/ImportOpenCVProject.png)
 
 6- Check that the ceta-vision-core-library-android project is being compiled into a .jar instead of an .apk. 
+
 ![Ceta vision core compiled as .jar](https://github.com/smarichal/ceta/blob/master/documentation/ceta-vision-core-library-androidJar.png)
 
 7- Copy and paste the ceta-vision-core-library-android.jar into the bin folder of the CETA project: 
+
 ![jar into bin folder](https://github.com/smarichal/ceta/blob/master/documentation/pasteJarIntoBinFolder.png)
 
 8 - Add the ceta-vision-core-library-android.jar to the build path of the CETA project
+
 ![add vision core to build path](https://github.com/smarichal/ceta/blob/master/documentation/AddJarToBuildPath.png)
 
 9- Create a User library with the opencv project. Let's call it opencv-248. Also, add openCV jar to the library
+
 ![Create user library](https://github.com/smarichal/ceta/blob/master/documentation/createUserLibrary1.png)
+
 ![Add jar to the library](https://github.com/smarichal/ceta/blob/master/documentation/createUserLibrary2-addOpenCVJar.png)
 
 10- add the opencv-248 library to CETA-android build path.  Add also a reference to this library.
